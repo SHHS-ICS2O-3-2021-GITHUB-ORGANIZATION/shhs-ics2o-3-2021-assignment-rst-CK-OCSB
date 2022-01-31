@@ -7,25 +7,23 @@
 print("Welcome to Math Practice! \nIn this program your math skills will be tested! \nYou will chose the category of your questions as well as the difficulty of your choosing.")
 MathChoise = str(input('What kind of math would you like to practice? \nIf you would like to choose addition type "Add" \nIf you would like to chose subtraction type "Sub" \nIf you would like to choose Multiplication type "Multi" \nIf you would like to chose Division type "Div" \nWhat would you like to choose:'))
 if MathChoise:
-    DiffSet = int(input('The difficulty of for this practice ranges from 1 to 5, \n1 is the the easiest and 5 being the hardest, the harder the difficulty, the less amount of time you will have to answer even harder questions!  \nPlease select a difficulty by typing a number:'))
+    DiffSet = int(input('The difficulty of for this practice ranges from 1 to 5, \n1 is the the easiest and 5 being the hardest, the harder the difficulty, the more amount of questions you will have to answer even harder questions!  \nPlease select a difficulty by typing a number:'))
 
 
 # VARIABLE DEFINITION
-import time
 import random
 
-#######Time Settings for the difficulty#########
+####### Settings for the difficulty#########
 if DiffSet == 1:
-    TimeVar = 210
+    QuestionAmmount = 10
 if DiffSet == 2:
-    TimeVar =180
+    QuestionAmmount = 20
 if DiffSet == 3:
-    TimeVar = 120
+    QuestionAmmount = 35
 if DiffSet == 4:
-    TimeVar = 90
+    QuestionAmmount = 50
 if DiffSet == 5:
-    TimeVar = 55
-#Every "TimeVar" has an additional second to give the user the full amount of time
+    QuestionAmmount = 75
 ###################
 if DiffSet == 1:
     SubRange1 = random.randint(1,20)
@@ -86,83 +84,77 @@ if DiffSet == 4:
     DivRange2 = random.randint(1,100)
     DivTotal = DivRange1 + DivRange2
 if DiffSet == 5:
-    DivRange1 = random.randint(5,12)
+    DivRange1 = random.randint(1,10)
     DivRange2 = random.randint(1,150)
     DivTotal = DivRange1 + DivRange2
 #########################
-TimeAmmount = 1 + TimeVar
-QuestionsAnswerd = 0
 CorrectAnswers = 0
 IncorrectAnswers = 0 
 # PROCESSING
-"""
-while TimeAmmount :
-    mins = TimeAmmount // 60
-    secs = TimeAmmount % 60 
-    timer = '{:02d}:{:02d}'.format(mins, secs)
-    time.sleep(1)
-    TimeAmmount-= 1
-"""
+
 ###################
 
 if MathChoise == ("Add"):
-  print("You have chosen addition your questions begin NOW!")
+ print("You have chosen addition your questions begin NOW!")
 
-while MathChoise == ("Add") and DiffSet == 1:
-  #while TimeAmmount != 0:
-    AddRange1 = random.randint(1,40)
-    AddRange2 = random.randint(1,40)
-    print("Your questions is",AddRange1,"+",AddRange2)
-    UserAnswer = int(input("Your answer is : "))
-    AddTotal = AddRange1 + AddRange2
-    QuestionsAnswerd = QuestionsAnswerd + 1
-    if UserAnswer == AddTotal :
-      CorrectAnswers = CorrectAnswers + 1 
-    if UserAnswer != AddTotal:
-      IncorrectAnswers = IncorrectAnswers + 1
+while MathChoise == ("Add") and DiffSet == 1 and QuestionAmmount > 0:
+  AddRange1 = random.randint(1,40)
+  AddRange2 = random.randint(1,40)
+  print("Your questions is",AddRange1,"+",AddRange2)
+  UserAnswer = int(input("Your answer is : "))
+  AddTotal = AddRange1 + AddRange2
+  if UserAnswer == AddTotal :
+    CorrectAnswers = CorrectAnswers + 1 
+  if UserAnswer != AddTotal:
+    IncorrectAnswers = IncorrectAnswers + 1
+  if UserAnswer:
+    QuestionAmmount = QuestionAmmount - 1
+
 while MathChoise == ("Add") and DiffSet == 2:
-  #while TimeAmmount != 0:
     AddRange1 = random.randint(1,75)
     AddRange2 = random.randint(1,75)
     print("Your questions is",AddRange1,"+",AddRange2)
     UserAnswer = int(input("Your answer is : "))
     AddTotal = AddRange1 + AddRange2
-    QuestionsAnswerd = QuestionsAnswerd + 1
     if UserAnswer == AddTotal :
       CorrectAnswers = CorrectAnswers + 1 
     if UserAnswer != AddTotal:
       IncorrectAnswers = IncorrectAnswers + 1
 while MathChoise == ("Add") and DiffSet == 3:
- #while TimeAmmount != 0:
     AddRange1 = random.randint(1,100)
     AddRange2 = random.randint(1,100)
     print("Your questions is",AddRange1,"+",AddRange2)
     UserAnswer = int(input("Your answer is : "))
     AddTotal = AddRange1 + AddRange2
-    QuestionsAnswerd = QuestionsAnswerd + 1
     if UserAnswer == AddTotal :
       CorrectAnswers = CorrectAnswers + 1 
     if UserAnswer != AddTotal:
       IncorrectAnswers = IncorrectAnswers + 1
 while MathChoise == ("Add") and DiffSet == 4:
-  #while TimeAmmount != 0:
     AddRange1 = random.randint(1,150)
     AddRange2 = random.randint(1,150)
     print("Your questions is",AddRange1,"+",AddRange2)
     UserAnswer = int(input("Your answer is : "))
     AddTotal = AddRange1 + AddRange2
-    QuestionsAnswerd = QuestionsAnswerd + 1
     if UserAnswer == AddTotal :
       CorrectAnswers = CorrectAnswers + 1 
     if UserAnswer != AddTotal:
      IncorrectAnswers = IncorrectAnswers + 1
 while MathChoise == ("Add") and DiffSet == 5:
-  #while TimeAmmount != 0:
     print("Your questions is",random.randint(1,200),"+",random.randint(1,200))
     UserAnswer = int(input("Your answer is : "))
     AddTotal = AddRange1 + AddRange2
-    QuestionsAnswerd = QuestionsAnswerd + 1
     if UserAnswer == AddTotal :
       CorrectAnswers = CorrectAnswers + 1 
     if UserAnswer != AddTotal:
       IncorrectAnswers = IncorrectAnswers + 1
+
+
+
+if QuestionAmmount == 0:
+    print("You answered",CorrectAnswers,"questions correctly.\nYou answered",IncorrectAnswers,"incorrectly. \nYou did this on difficulty",DiffSet)
+    print("Practice some more! Maybe try a harder difficulty")
+
+
+
+
