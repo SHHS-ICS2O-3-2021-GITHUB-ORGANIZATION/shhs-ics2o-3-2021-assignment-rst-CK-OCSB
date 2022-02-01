@@ -6,9 +6,10 @@
 # INPUT
 print("Welcome to Math Practice! \nIn this program your math skills will be tested! \nYou will chose the category of your questions as well as the difficulty of your choosing.")
 MathChoise = str(input('What kind of math would you like to practice? \nIf you would like to choose addition type "Add" \nIf you would like to chose subtraction type "Sub" \nIf you would like to choose Multiplication type "Multi" \nIf you would like to chose Division type "Div" \nWhat would you like to choose:'))
+if MathChoise == ("Div"):
+  print("if the the answer wish to enter is a whole number ora non negative number put .00 at the end!")
 if MathChoise:
     DiffSet = int(input('The difficulty of for this practice ranges from 1 to 5, \n1 is the the easiest and 5 being the hardest, the harder the difficulty, the more amount of questions you will have to answer even harder questions!  \nPlease select a difficulty by typing a number:'))
-
 
 # VARIABLE DEFINITION
 import random
