@@ -255,7 +255,7 @@ while MathChoise == ("Div") and DiffSet == 1 and QuestionAmmount > 0:
   DivRange1 = random.randint(1,3)
   DivRange2 = random.randint(1,30)
   print("Your questions is",DivRange1,"/",DivRange2)
-  UserAnswer = int(input("Your answer is : "))
+  UserAnswer = float(input("Your answer is : "))
   DivTotal = DivRange1 / DivRange2
   if UserAnswer == DivTotal :
     CorrectAnswers = CorrectAnswers + 1 
@@ -269,7 +269,7 @@ while MathChoise == ("Div") and DiffSet == 2 and QuestionAmmount > 0:
   DivRange1 = random.randint(1,5)
   DivRange2 = random.randint(1,60)
   print("Your questions is",DivRange1,"/",DivRange2)
-  UserAnswer = int(input("Your answer is : "))
+  UserAnswer = float(input("Your answer is : "))
   DivTotal = DivRange1 / DivRange2
   if UserAnswer == DivTotal :
     CorrectAnswers = CorrectAnswers + 1 
@@ -283,7 +283,7 @@ while MathChoise == ("Div") and DiffSet == 3 and QuestionAmmount > 0:
   DivRange1 = random.randint(1,7)
   DivRange2 = random.randint(1,80)
   print("Your questions is",DivRange1,"/",DivRange2)
-  UserAnswer = int(input("Your answer is : "))
+  UserAnswer = float(input("Your answer is : "))
   DivTotal = DivRange1 / DivRange2
   if UserAnswer == DivTotal :
     CorrectAnswers = CorrectAnswers + 1 
@@ -297,7 +297,7 @@ while MathChoise == ("Div") and DiffSet == 4 and QuestionAmmount > 0:
   DivRange1 = random.randint(1,10)
   DivRange2 = random.randint(5,100)
   print("Your questions is",DivRange1,"/",DivRange2)
-  UserAnswer = int(input("Your answer is : "))
+  UserAnswer = float(input("Your answer is : "))
   DivTotal = DivRange1 / DivRange2
   if UserAnswer == DivTotal :
     CorrectAnswers = CorrectAnswers + 1 
@@ -311,7 +311,7 @@ while MathChoise == ("Div") and DiffSet == 5 and QuestionAmmount > 0:
   DivRange1 = random.randint(5,12)
   DivRange2 = random.randint(1,150)
   print("Your questions is",DivRange1,"/",DivRange2)
-  UserAnswer = int(input("Your answer is : "))
+  UserAnswer = float(input("Your answer is : "))
   DivTotal = DivRange1 / DivRange2
   if UserAnswer == DivTotal :
     CorrectAnswers = CorrectAnswers + 1 
