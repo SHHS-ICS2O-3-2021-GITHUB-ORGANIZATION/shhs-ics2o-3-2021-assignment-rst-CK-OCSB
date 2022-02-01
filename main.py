@@ -114,7 +114,7 @@ while MathChoise == ("Sub") and DiffSet == 1 and QuestionAmmount > 0:
   SubRange2 = random.randint(1,25)
   print("Your questions is",SubRange1,"-",SubRange2)
   UserAnswer = int(input("Your answer is: "))
-  SubTotal = SubRange1 + SubRange2
+  SubTotal = SubRange1 - SubRange2
   if UserAnswer == SubTotal:
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != SubTotal:
@@ -128,7 +128,7 @@ while MathChoise == ("Sub") and DiffSet == 2 and QuestionAmmount > 0:
   SubRange2 = random.randint(1,45)
   print("Your questions is",SubRange1,"-",SubRange2)
   UserAnswer = int(input("Your answer is: "))
-  SubTotal = SubRange1 + SubRange2
+  SubTotal = SubRange1 - SubRange2
   if UserAnswer == SubTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != SubTotal:
@@ -142,7 +142,7 @@ while MathChoise == ("Sub") and DiffSet == 3 and QuestionAmmount > 0:
   SubRange2 = random.randint(1,50)
   print("Your questions is",SubRange1,"-",SubRange2)
   UserAnswer = int(input("Your answer is : "))
-  SubTotal = SubRange1 + SubRange2
+  SubTotal = SubRange1 - SubRange2
   if UserAnswer == SubTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != SubTotal:
@@ -156,7 +156,7 @@ while MathChoise == ("Sub") and DiffSet == 4 and QuestionAmmount > 0:
   SubRange2 = random.randint(1,75)
   print("Your questions is",SubRange1,"-",SubRange2)
   UserAnswer = int(input("Your answer is : "))
-  SubTotal = SubRange1 + SubRange2
+  SubTotal = SubRange1 - SubRange2
   if UserAnswer == SubTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != SubTotal:
@@ -170,7 +170,7 @@ while MathChoise == ("Sub") and DiffSet == 5 and QuestionAmmount > 0:
   SubRange2 = random.randint(1,85)
   print("Your questions is",SubRange1,"-",SubRange2)
   UserAnswer = int(input("Your answer is: "))
-  SubTotal = SubRange1 + SubRange2
+  SubTotal = SubRange1 - SubRange2
   if UserAnswer == SubTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != SubTotal:
@@ -185,7 +185,7 @@ while MathChoise == ("Multi") and DiffSet == 1 and QuestionAmmount > 0:
   MultiRange2 = random.randint(1,10)
   print("Your questions is",MultiRange1,"x",MultiRange2)
   UserAnswer = int(input("Your answer is : "))
-  MultiTotal = MultiRange1 + MultiRange2
+  MultiTotal = MultiRange1 * MultiRange2
   if UserAnswer == MultiTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != MultiTotal:
@@ -213,7 +213,7 @@ while MathChoise == ("Multi") and DiffSet == 3 and QuestionAmmount > 0:
   MultiRange2 = random.randint(1,12)
   print("Your questions is",MultiRange1,"x",MultiRange2)
   UserAnswer = int(input("Your answer is: "))
-  MultiTotal = MultiRange1 + MultiRange2
+  MultiTotal = MultiRange1 * MultiRange2
   if UserAnswer == MultiTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != MultiTotal:
@@ -227,7 +227,7 @@ while MathChoise == ("Multi") and DiffSet == 4 and QuestionAmmount > 0:
   MultiRange2 = random.randint(5,14)
   print("Your questions is",MultiRange1,"x",MultiRange2)
   UserAnswer = int(input("Your answer is : "))
-  MultiTotal = MultiRange1 + MultiRange2
+  MultiTotal = MultiRange1 * MultiRange2
   if UserAnswer == MultiTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != MultiTotal:
@@ -241,7 +241,7 @@ while MathChoise == ("Multi") and DiffSet == 5 and QuestionAmmount > 0:
   MultiRange2 = random.randint(5,20)
   print("Your questions is",MultiRange1,"x",MultiRange2)
   UserAnswer = int(input("Your answer is : "))
-  MultiTotal = MultiRange1 + MultiRange2
+  MultiTotal = MultiRange1 * MultiRange2
   if UserAnswer == MultiTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != MultiTotal:
@@ -256,7 +256,7 @@ while MathChoise == ("Div") and DiffSet == 1 and QuestionAmmount > 0:
   DivRange2 = random.randint(1,30)
   print("Your questions is",DivRange1,"/",DivRange2)
   UserAnswer = int(input("Your answer is : "))
-  DivTotal = DivRange1 + DivRange2
+  DivTotal = DivRange1 / DivRange2
   if UserAnswer == DivTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != DivTotal:
@@ -270,7 +270,7 @@ while MathChoise == ("Div") and DiffSet == 2 and QuestionAmmount > 0:
   DivRange2 = random.randint(1,60)
   print("Your questions is",DivRange1,"/",DivRange2)
   UserAnswer = int(input("Your answer is : "))
-  DivTotal = DivRange1 + DivRange2
+  DivTotal = DivRange1 / DivRange2
   if UserAnswer == DivTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != DivTotal:
@@ -284,7 +284,7 @@ while MathChoise == ("Div") and DiffSet == 3 and QuestionAmmount > 0:
   DivRange2 = random.randint(1,80)
   print("Your questions is",DivRange1,"/",DivRange2)
   UserAnswer = int(input("Your answer is : "))
-  DivTotal = DivRange1 + DivRange2
+  DivTotal = DivRange1 / DivRange2
   if UserAnswer == DivTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != DivTotal:
@@ -298,7 +298,7 @@ while MathChoise == ("Div") and DiffSet == 4 and QuestionAmmount > 0:
   DivRange2 = random.randint(5,100)
   print("Your questions is",DivRange1,"/",DivRange2)
   UserAnswer = int(input("Your answer is : "))
-  DivTotal = DivRange1 + DivRange2
+  DivTotal = DivRange1 / DivRange2
   if UserAnswer == DivTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != DivTotal:
@@ -312,7 +312,7 @@ while MathChoise == ("Div") and DiffSet == 5 and QuestionAmmount > 0:
   DivRange2 = random.randint(1,150)
   print("Your questions is",DivRange1,"/",DivRange2)
   UserAnswer = int(input("Your answer is : "))
-  DivTotal = DivRange1 + DivRange2
+  DivTotal = DivRange1 / DivRange2
   if UserAnswer == DivTotal :
     CorrectAnswers = CorrectAnswers + 1 
   if UserAnswer != DivTotal:
